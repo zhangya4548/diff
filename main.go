@@ -77,7 +77,7 @@ func main() {
 
 	listMap := make(map[string]struct{})
 
-	_,_,tmpList := DiffStr(jinTianList,zuoTianList)
+	_,_,tmpList := DiffStr(zuoTianList,jinTianList)
 	for _, v := range tmpList {
 		if _, ok := listMap[v]; ok {
 			continue
